@@ -4,13 +4,13 @@ import {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
-const About: FC = memo(() => {
+const Buy: FC = memo(() => {
   return (
-    <Section className="" sectionId={SectionId.About}>
-      about
+    <Section className="" sectionId={SectionId.Buy}>
+      buy
     </Section>
   );
 });
 
-About.displayName = 'About';
-export default About;
+Buy.displayName = 'Buy';
+export default Buy;

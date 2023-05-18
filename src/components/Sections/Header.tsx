@@ -2,6 +2,9 @@ import {Dialog, Transition} from '@headlessui/react';
 import {Bars3BottomRightIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
+import logo from '../../images/logo.png';
+import Image from 'next/image';
+
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
 import {SectionId} from '../../data/data';
@@ -12,7 +15,7 @@ export const headerID = 'headerNav';
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
-    () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
+    () => [SectionId.Hero, SectionId.About, SectionId.Buy, SectionId.Token, SectionId.Roadmap],
     [],
   );
 
@@ -33,22 +36,35 @@ const Header: FC = memo(() => {
 const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
   ({navSections, currentSection}) => {
     const baseClass =
-      '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
-    const activeClass = classNames(baseClass, 'text-orange-500');
-    const inactiveClass = classNames(baseClass, 'text-neutral-100');
+      '-m-1.5 p-1.5 rounded-md font-bold text-xl first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:text-white sm:hover:text-white righteous mx-5';
+    const activeClass = classNames(baseClass, 'text-white');
+    const inactiveClass = classNames(baseClass, 'text-[#1c343d]');
     return (
-      <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
-        <nav className="flex justify-center gap-x-8">
-          {navSections.map(section => (
-            <NavItem
-              activeClass={activeClass}
-              current={section === currentSection}
-              inactiveClass={inactiveClass}
-              key={section}
-              section={section}
-            />
-          ))}
-        </nav>
+      <header className="fixed top-0 z-50 hidden w-full bg-[#a5d9ee] p-4 backdrop-blur sm:block" id={headerID}>
+        <div className="flex w-full items-center justify-around">
+          <h1>
+            <Link href="#" className="flex items-center">
+              <Image alt="" src={logo} className="h-24 w-24" />
+              <span className="fanco text-2xl text-[#1c343d]">JoyHop</span>
+            </Link>
+          </h1>
+          <nav className="flex justify-center gap-x-8">
+            {navSections.map(section => (
+              <NavItem
+                activeClass={activeClass}
+                current={section === currentSection}
+                inactiveClass={inactiveClass}
+                key={section}
+                section={section}
+              />
+            ))}
+          </nav>
+          <button
+            type="button"
+            className="righteous mb-2 mr-2 rounded-full border border-gray-300 bg-white px-10 py-2.5 text-lg font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+            buy now
+          </button>
+        </div>
       </header>
     );
   },
@@ -130,7 +146,7 @@ const NavItem: FC<{
       href={`/#${section}`}
       key={section}
       onClick={onClick}>
-      {section}
+      {section === 'buy' ? 'how to buy' : section}
     </Link>
   );
 });
