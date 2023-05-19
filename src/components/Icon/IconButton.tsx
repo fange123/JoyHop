@@ -16,7 +16,7 @@ const IconButton: React.FC<IProps> = ({children, icon, className}) => {
         <Image alt="" src={icon} className="h-full w-auto" />
       </div>
       <div>
-        <div className="-mt-1 font-sans text-2xl font-semibold">{children}</div>
+        <div className="montserrat -mt-1 text-2xl font-semibold">{children}</div>
       </div>
     </button>
   );

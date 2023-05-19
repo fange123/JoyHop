@@ -57,6 +57,7 @@ export const SectionId = {
   Buy: 'buy',
   Token: 'tokenomics',
   Roadmap: 'roadmap',
+  Contact: 'contact',
   Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
