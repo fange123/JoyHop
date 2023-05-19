@@ -8,14 +8,14 @@ import fly from '../../images/fly.png';
 
 const Token: FC = memo(() => {
   return (
-    <Section className="w-full lg:px-20" noPadding sectionId={SectionId.Token}>
+    <Section className="w-full px-10 lg:px-20 lg:pb-20" noPadding sectionId={SectionId.Token} line>
       <h3 className="fanco flex items-end justify-center text-3xl leading-10 text-gray-700 lg:text-5xl">
         <Image alt="" src={title} className="w-24" /> <span>tokenomics</span>
       </h3>
-      <h3 className="montserrat mt-5 flex items-end justify-center text-xl font-semibold leading-10 text-gray-200 lg:text-3xl">
+      <h3 className=" montserrat mt-8 flex items-end justify-center text-center text-xl font-semibold leading-10 text-gray-200 lg:text-3xl">
         Total Supply: 1,000,000,000 JOYHOP
       </h3>
-      <div className="mt-10 flex w-full items-center justify-between">
+      <div className="flex w-full flex-col items-center justify-center lg:mt-10 lg:flex-row">
         <ul className="flex-2">
           <li className=" montserrat mt-10 break-words  text-xl font-semibold tracking-wide  text-gray-600 lg:text-2xl lg:leading-12">
             Initial Liquidity: <span className="text-orange-500">92.8%</span> of the total supply is allocated to the
@@ -26,16 +26,16 @@ const Token: FC = memo(() => {
             multi-signature wallet for future centralized exchange listings, bridges, and liquidity pools.
           </li>
         </ul>
-        <div className="relative flex flex-3 items-center">
+        <div className="relative mt-10 flex flex-3 flex-col lg:mt-0 lg:items-center lg:justify-center">
           <p className=" montserrat text-md lg:text-md font-semibold  tracking-wide text-[#f64444] lg:leading-10">
             Initial Liquidity:92.8%
           </p>
-          <Image alt="" src={pie} className="lg:w-96" />
+          <Image alt="" src={pie} className="w-full lg:w-120" />
 
           <p className=" montserrat text-md lg:text-md font-semibold tracking-wide text-[#f64444] lg:leading-10">
             Reserved Supply:7.2%
           </p>
-          <Image alt="" src={fly} className="absolute bottom-0 right-0 lg:w-44" />
+          <Image alt="" src={fly} className="absolute right-0 top-0 w-20 lg:bottom-0 lg:w-44" />
         </div>
       </div>
     </Section>
