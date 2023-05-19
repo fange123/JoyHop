@@ -9,6 +9,9 @@ module.exports = {
         'buy-bg': '#11171e',
         'buy-button': '',
       }),
+      lineHeight: {
+        12: '3rem',
+      },
       spacing: {
         120: '30rem',
         150: '40rem',
@@ -21,6 +24,8 @@ module.exports = {
         120: '30rem',
       },
       width: {
+        '1/5': '20%',
+        '2/9': '22%',
         120: '30rem',
       },
       container: {

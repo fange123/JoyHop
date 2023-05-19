@@ -7,7 +7,7 @@ import Section from '../Layout/Section';
 const Token: FC = memo(() => {
   return (
     <Section className="" sectionId={SectionId.Token}>
-      about
+      token
     </Section>
   );
 });

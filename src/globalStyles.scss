@@ -13,6 +13,11 @@
       'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji';
   }
+  .montserrat {
+    font-family: 'montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+  }
   @font-face {
     font-family: 'righteous';
     src: url(./fonts/Righteous-Regular.ttf);
@@ -20,6 +25,10 @@
   @font-face {
     font-family: 'fanco';
     src: url(./fonts/Facon-2.ttf);
+  }
+  @font-face {
+    font-family: 'montserrat';
+    src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
   }
 }
 
