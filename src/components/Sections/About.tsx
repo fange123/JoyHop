@@ -3,10 +3,11 @@ import {FC, memo} from 'react';
 import {SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import title from '../../images/title.png';
+import about from '../../images/about.png';
 
 const About: FC = memo(() => {
   return (
-    <Section className="f-full relative lg:px-20" sectionId={SectionId.About}>
+    <Section className="f-full relative lg:px-20" sectionId={SectionId.About} line>
       <div className="mt-20 text-center">
         <h3 className="fanco flex items-end justify-center text-3xl leading-10 text-gray-700 lg:text-5xl">
           <Image alt="" src={title} className="w-24" /> <span>About</span>
@@ -21,7 +22,9 @@ const About: FC = memo(() => {
           will happen in the next second. But it's this uncertainty that makes every trade exciting and exhilarating.
           You'll become an investment adventurer, exploring untapped wealth potential!
         </p>
-        <div></div>
+        <div className="mt-10 flex justify-center">
+          <Image alt="" src={about} className="w-1/2" />
+        </div>
       </div>
     </Section>
   );
