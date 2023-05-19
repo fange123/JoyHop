@@ -36,10 +36,10 @@ const Hero: FC = memo(() => {
           <h3 className="fanco mt-10 flex items-center text-2xl font-semibold text-gray-700 lg:w-full lg:text-4xl">
             JoyHop <Image alt="" src={logo} className="w-40" />
           </h3>
-          <p className="montserrat mt-5 break-words text-center text-xl font-semibold text-gray-600 lg:mt-10  lg:text-left lg:text-2xl lg:leading-12">
+          <p className="montserrat mt-5 break-words text-center text-xl  text-gray-900 lg:mt-10  lg:text-left lg:text-2xl lg:leading-12">
             I'm JoyHop, the memecoin from the future! I'm here to bring you insane joy and endless fun!
           </p>
-          <p className="montserrat mt-3 break-words text-center  text-xl font-semibold text-gray-600  lg:text-left lg:text-2xl lg:leading-12">
+          <p className="montserrat mt-3 break-words text-center  text-xl  text-gray-900  lg:text-left lg:text-2xl lg:leading-12">
             We believe that in the world of JoyHop, everyone can find happiness and success. We're not just a digital
             currency, we're a community, a united collective that motivates and supports each other. Join us and indulge
             in our explosive social activities, games, raffles, and grand parties with JoyHoppers worldwide!

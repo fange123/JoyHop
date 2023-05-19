@@ -9,6 +9,9 @@ module.exports = {
         'buy-bg': '#11171e',
         'buy-button': '',
       }),
+      backgroundImage: {
+        roadmapBg: "url('/images/roadmap_bg.png')",
+      },
       lineHeight: {
         12: '3rem',
       },

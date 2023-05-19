@@ -17,11 +17,11 @@ const Token: FC = memo(() => {
       </h3>
       <div className="flex w-full flex-col items-center justify-center lg:mt-10 lg:flex-row">
         <ul className="flex-2">
-          <li className=" montserrat mt-10 break-words  text-xl font-semibold tracking-wide  text-gray-600 lg:text-2xl lg:leading-12">
+          <li className=" montserrat mt-10 break-words  text-xl tracking-wide  text-gray-900 lg:text-2xl lg:leading-12">
             Initial Liquidity: <span className="text-orange-500">92.8%</span> of the total supply is allocated to the
             liquidity pool.
           </li>
-          <li className=" montserrat mt-10 break-words  text-xl font-semibold tracking-wide  text-gray-600 lg:text-2xl lg:leading-12">
+          <li className=" montserrat mt-10 break-words  text-xl  tracking-wide  text-gray-900 lg:text-2xl lg:leading-12">
             Reserved Supply: <span className="text-orange-500">7.2%</span> of the token supply is held in a
             multi-signature wallet for future centralized exchange listings, bridges, and liquidity pools.
           </li>

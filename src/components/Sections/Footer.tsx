@@ -16,12 +16,12 @@ const Footer: FC = memo(() => (
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
       <div className="flex-2">
         <div className="mt-10 px-5 text-center lg:mt-20 lg:px-20">
-          <p className=" montserrat mt-10 break-words  text-xl font-semibold tracking-wide  text-gray-300 lg:text-2xl lg:leading-12">
+          <p className=" montserrat mt-10 break-words  text-xl tracking-wide  text-gray-300 lg:text-2xl lg:leading-12">
             So, are you ready to dive into the embrace of JoyHop? Leave behind the mundane daily grind, unleash your
             inner wildness, and fully enjoy the endless joy brought by JoyHop! Join our family and conquer the pinnacle
             of fun in the digital world!
           </p>
-          <p className=" montserrat mt-10 break-words text-xl font-semibold tracking-wide  text-gray-300  lg:text-2xl lg:leading-12">
+          <p className=" montserrat mt-10 break-words text-xl  tracking-wide  text-gray-300  lg:text-2xl lg:leading-12">
             JoyHop - Where joy meets wealth! Remember, our motto is: Jump with joy, endless gains!
           </p>
           <div className="mt-20 flex items-center justify-center">
