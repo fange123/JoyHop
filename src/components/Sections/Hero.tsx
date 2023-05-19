@@ -27,7 +27,7 @@ import IconButton from '../../components/Icon/IconButton';
 
 const Hero: FC = memo(() => {
   return (
-    <Section noPadding sectionId={SectionId.Hero} className="w-full px-5 pt-20 lg:px-20 lg:pt-36" line>
+    <Section noPadding sectionId={SectionId.Hero} className="w-full px-5 pb-20 pt-20 lg:px-20 lg:pt-36" line>
       <div className="relative flex h-full w-full flex-col-reverse  justify-around lg:flex-row">
         <div className="mt-5 lg:mt-0 lg:flex-1">
           <Image alt="" src={homeImg} />

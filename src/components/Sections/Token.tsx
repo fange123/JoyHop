@@ -8,8 +8,8 @@ import fly from '../../images/fly.png';
 
 const Token: FC = memo(() => {
   return (
-    <Section className="w-full px-10 lg:px-20 lg:pb-20" noPadding sectionId={SectionId.Token} line>
-      <h3 className="fanco flex items-end justify-center text-3xl leading-10 text-gray-700 lg:text-5xl">
+    <Section className="w-full px-10 py-20 lg:px-20" noPadding sectionId={SectionId.Token} line>
+      <h3 className="fanco mt-20 flex items-end justify-center text-3xl leading-10 text-gray-700 lg:text-5xl">
         <Image alt="" src={title} className="w-24" /> <span>tokenomics</span>
       </h3>
       <h3 className=" montserrat mt-8 flex items-end justify-center text-center text-xl font-semibold leading-10 text-gray-200 lg:text-3xl">

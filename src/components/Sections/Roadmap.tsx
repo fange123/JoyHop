@@ -21,7 +21,7 @@ const Roadmap: FC = memo(() => {
           </div>
         </div>
         <div className="mt-10 w-full lg:mt-0 lg:flex">
-          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff]/30 py-6  lg:mr-10 lg:px-10">
+          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff] py-6 shadow-xl lg:mr-10 lg:px-10">
             <h3 className="fanco mb-5 text-center text-2xl text-gray-600  lg:mt-5  lg:text-3xl">Phase 1</h3>
             <ul className="flex-1 flex-col px-10 lg:px-0">
               <li className=" montserrat mb-3 list-disc items-center justify-between break-words text-xl tracking-wide text-gray-900  lg:leading-8">
@@ -35,7 +35,7 @@ const Roadmap: FC = memo(() => {
               </li>
             </ul>
           </div>
-          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff]/30 py-6  lg:mr-10 lg:px-10">
+          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff] py-6  shadow-xl lg:mr-10 lg:px-10">
             <h3 className="fanco mb-5 text-center text-2xl text-gray-600  lg:mt-5  lg:text-3xl">Phase 3</h3>
             <ul className="flex-1 flex-col px-10 lg:px-0">
               <li className=" montserrat mb-3 list-disc items-center justify-between break-words text-xl tracking-wide text-gray-900 lg:leading-8">
@@ -49,7 +49,7 @@ const Roadmap: FC = memo(() => {
               </li>
             </ul>
           </div>
-          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff]/30 py-6  lg:px-10">
+          <div className="mb-10 flex w-full flex-col items-center rounded-r-xl border border-gray-600 bg-[#fff] py-6 shadow-xl lg:px-10">
             <h3 className="fanco mb-5 text-center text-2xl text-gray-600  lg:mt-5  lg:text-3xl">Phase 4</h3>
             <ul className="flex-1 flex-col px-10 lg:px-0">
               <li className=" montserrat mb-3 list-disc items-center justify-between break-words text-xl  tracking-wide text-gray-900 lg:leading-8">

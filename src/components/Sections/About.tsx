@@ -7,7 +7,7 @@ import about from '../../images/about.png';
 
 const About: FC = memo(() => {
   return (
-    <Section className="f-full relative lg:px-20" sectionId={SectionId.About} line>
+    <Section className="relative w-full lg:px-20" sectionId={SectionId.About} line>
       <div className="mt-20 text-center">
         <h3 className="fanco flex items-end justify-center text-3xl leading-10 text-gray-700 lg:text-5xl">
           <Image alt="" src={title} className="w-24" /> <span>About</span>
